@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup Page</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'css/Signup.css' )}}"></head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <form class="form" method="POST" action="/create_collection">
+        <h1><u>Register</u></h1>
+        <div class = "login">Already have a account ? <a href="{{url_for('login_page')}}" style="text-decoration: none; color: blue;">Log in</a></div>
+
+        <div class="inputContainer" style="margin-top: 40px;">
+          <label class="label" for="user_name">User Name</label>
+          <input type="text" name="user_name" id="user_name" class="input" placeholder="Erwin Smith" required>
+        </div>
+
+        <div class="inputContainer">
+          <label class="label" for="contact_no">Contact Number</label>
+          <input type="number" name="contact_no" id="contact_no" class="input" placeholder="+94 " required>
+        </div>
+
+        <div class="inputContainer">
+          <label class="label" for="address">Address</label>
+          <input type="text" class="input" name="address" id="address" placeholder="Dubai main road, Dubai Kuruku santhu, Dubai" required>
+        </div>
+
+        <div class="inputContainer">
+            <label class="label" for="email">Email</label>
+            <input type="email" class="input" name="email" id="email" placeholder="elderguardian@gmail.com" required>
+        </div>
+  
+        <div class="inputContainer">
+          <label class="label" for="password">password</label>
+          <input type="password" class="input" name="password" id="password" placeholder="enter a strong password" required>
+        </div>
+  
+        <input type="submit" class="submitBtn" value="Next">
+      </form>
+    </div>
+
+    <div class="video-container">
+      <video src="{{ url_for('static', filename='video/ElderGuardian_animation.mp4') }}" autoplay muted loop></video>
+    </div>
+  </div>
+</body>
+</html>

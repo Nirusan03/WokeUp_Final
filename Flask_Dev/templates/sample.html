@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Health Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+    }
+
+    .dashboard {
+      width: 100%;
+      height: 100vh;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #45b77a;
+      color: #144d26;
+      border: 1px solid #1b7537;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .dashboard h1 {
+      font-size: 28px;
+      margin-top: 0;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #144d26;
+      width: 100%;
+    }
+
+    .section {
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #a5e1b6;
+      border-radius: 5px;
+      flex-basis: calc(50% - 20px);
+      box-sizing: border-box;
+    }
+
+    .section h2 {
+      font-size: 20px;
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #144d26;
+    }
+
+    .section p {
+      margin-top: 0;
+      color: #144d26;
+    }
+
+    .section .data {
+      font-size: 24px;
+      color: #144d26;
+    }
+
+    .section .data span {
+      font-size: 14px;
+      color: #144d26;
+    }
+
+    .section i {
+      font-size: 20px;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <h1>Health Dashboard</h1>
+
+    <div class="section">
+      <h2><i class="fas fa-heartbeat"></i> Heart Rate</h2>
+      <p>Current heart rate: <span class="data">75 bpm</span></p>
+    </div>
+
+    <div class="section">
+      <h2><i class="fas fa-weight"></i> Weight</h2>
+      <p>Current weight: <span class="data">70 kg</span></p>
+    </div>
+
+    <div class="section">
+      <h2><i class="fas fa-lungs"></i> Oxygen Level</h2>
+      <p>Current oxygen level: <span class="data">98%</span></p>
+    </div>
+
+    <div class="section">
+      <h2><i class="fas fa-tint"></i> Water Intake</h2>
+      <p>Total water intake: <span class="data">2 liters</span></p>
+    </div>
+
+    <div class="section">
+      <h2><i class="fas fa-fire"></i> Calories Burned</h2>
+      <p>Total calories burned: <span class="data">500 kcal</span></p>
+    </div>
+
+    <div class="section">
+      <h2><i class="fas fa-bed"></i> Sleep</h2>
+      <p>Total hours of sleep: <span class="data">8 hours</span></p>
+    </div>
+
+    <div class="section">
+      <h2><i class="fas fa-calendar-alt"></i> Upcoming Program</h2>
+      <p>Next program: <span class="data">Yoga Class</span></p>
+    </div>
+
+    <div class="section">
+      <h2><i class="fas fa-calendar"></i> Date</h2>
+      <p>Current date: <span class="data">May 20, 2023</span></p>
+    </div>
+  </div>
+</body>
+</html>

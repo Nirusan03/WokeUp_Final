@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pose Detection</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Pose Detection</h1>
+    <div id="video-container">
+        <img id="video-stream">
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            var video = document.getElementById("video-stream");
+            var url = "{{ url_for('video_feed') }}";
+            video.src = url;
+        });
+    </script>
+</body>
+</html>

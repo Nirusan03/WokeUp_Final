@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/Signup.css' )}}">
+    </head>
+    <body>
+    <div class="container">
+        <div class="form-container">
+        <form class="form" method="POST" action="/signup2_insert">
+            <h1><u>Health Details</u></h1>
+            <div class = "login">Already have a account ? <a href="#" style="text-decoration: none; color: blue;">Log in</a></div>
+
+            <div class="inputContainer" style="margin-top: 40px;">
+            <label class="label" for="user_name">Parent name</label>
+            <input type="text" name="user_name" id="user_name" class="input" placeholder="Erwin Smith" required>
+            </div>
+
+            <div class="inputContainer">
+            <label class="label" for="gender">Gender</label>
+            <input type="text" class="input" name="gender" id="gender" placeholder="" required>
+            </div>
+
+            <div class="inputContainer">
+                <label class="label" for="age">Age</label>
+                <input type="number" name="age" id="age" class="input" placeholder="30+" required>
+            </div>
+
+            <div class="inputContainer">
+                <label class="label" for="address">Parent's Living address</label>
+                <input type="text" class="input" name="address" id="address" placeholder="Dubai main road, Dubai Kuruku santhu, Dubai" required>
+            </div>
+
+            <div class="inputContainer">
+                <label class="label" for="bloody_type">Bloody type</label>
+                <input type="text" class="input" name="bloody_type" id="bloody_type" placeholder="O POSITIVE" required>
+            </div>
+
+            <div class="inputContainer">
+                <label class="label" for="allergies">Allergies</label>
+                <input type="text" class="input" name="allergies" id="allergies" placeholder="Food, Drinks, Etc" required>
+            </div>
+
+            <div class="inputContainer">
+                <label class="label" for="issues">Medical issues</label>
+                <input type="text" class="input" name="issues" id="issues" placeholder="Diabetes/ Cholesterol/ None" required>
+            </div>
+
+            <input type="submit" class="submitBtn" value="Next">
+        </form>
+        </div>
+
+        <div class="video-container">
+        <video src="{{ url_for('static', filename='video/ElderGuardian_animation.mp4') }}" autoplay muted loop></video>
+        </div>
+    </div>
+</body>
+</html>

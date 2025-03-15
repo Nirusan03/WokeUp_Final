@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/Signup.css' )}}">
+    </head>
+    <body>
+    <div class="container">
+        <div class="form-container">
+            <form class="form" method="POST" action="/insert_signup_vendor6">
+                <h1 style="margin-left: -6px;""><u>VERIFICATION</u></h1>
+        
+                <div class="inputContainer">
+                    <label class="label" for="ver_number">Verification number</label>
+                    <input type="number" class="input" name="ver_number" id="ver_number" placeholder="3 digits" required>
+                </div>
+                
+                <input type="submit" class="submitBtn" value="SIGN IN">
+              </form>
+        </form>
+        </div>
+
+        <div class="video-container">
+        <video src="{{ url_for('static', filename='video/ElderGuardian_animation.mp4') }}" autoplay muted loop></video>
+        </div>
+    </div>
+</body>
+</html>

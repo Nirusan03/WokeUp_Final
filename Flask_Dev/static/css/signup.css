@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "lato", sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.video-container {
+  flex: 2; /* Increase the flex value to increase the width */
+  position: relative;
+  overflow: hidden;
+}
+
+.video-container video {
+  width: 110%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.form-container {
+  flex: 1; /* Reduce the flex value to decrease the width */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+
+.form-container h2 {
+  text-align: center;
+}
+
+.form-container form {
+  width: 70%; /* Reduce the width value to decrease the form width */
+  max-width: 400px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.form-container button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .video-container {
+    height: 50vh;
+  }
+}
+
+
+.form {
+  position: relative;
+  left: 10%;
+}
+
+.form label, .form input[type="submit"] {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form input[type="text"], .form input[type="password"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form input[type="text"], .form input[type="password"]{
+  border: 1px solid black;
+  width: 300px;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.form input[type="number"], .form input[type="email"]{
+  width: 320px;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 40px;
+}
+.inputContainer{
+  margin-top: 20px;
+}
+
+.label{
+  margin-left: 3%;
+  font-weight: 600;
+  color: #055526;
+}
+
+.input{
+  width: 300px;
+  height: 22px;
+}
+
+h1{
+  font-size: 50px;
+  margin: 0 0 10px 60px;
+  color: #055526;
+}
+
+.login{
+  font-size: 14px;
+  font-weight: 600px;
+  margin-left: 15%;
+}
+
+.submitBtn{
+  margin: 30px 0 0 60px;
+  width: 200px;
+  height: 50px;
+  background-color: #272643;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+
+.submitBtn:hover{
+  cursor: pointer;
+  width: 220px;
+  height: 60px;
+}

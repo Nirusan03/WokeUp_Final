@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup Page</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'css/Signup.css' )}}"></head>
+<body>
+  <div class="container">
+    <div class="form-container">
+        <div class="form-class">
+            <h1 class="title">Log In Vendor</h1>
+      
+              <form class="form" method = 'POST' action="{{ url_for('login_vendor') }}">
+      
+                <div class="inputContainer">
+                  <label for="password" class="label">User Name</label>
+                  <input type="text" id="name" class="input" name="name" placeholder="Rocks X xebec">
+                </div>
+          
+                <div class="inputContainer">
+                  <label for="email" class="label">Password</label>
+                  <input type="password" class="input" placeholder="Enter the password here" name = "password">
+                </div>
+          
+                <input type="submit" class="submitBtn" value="LOG IN">
+              </form>
+            </div>
+    </div>
+
+    <div class="video-container">
+      <video src="{{ url_for('static', filename='video/ElderGuardian_animation.mp4') }}" autoplay muted loop></video>
+    </div>
+  </div>
+</body>
+</html>
